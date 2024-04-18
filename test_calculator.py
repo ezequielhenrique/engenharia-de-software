@@ -1,5 +1,5 @@
 from unittest import main, TestCase
-from calculator import divisao
+from calculator import divisao, Soma, Subtracao
 
 
 class DivisaoTest(TestCase):
