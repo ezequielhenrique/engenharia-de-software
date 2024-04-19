@@ -15,7 +15,7 @@ def Subtracao( a,  b):
 
 
 if __name__ == '__main__':
-  funcao = int(input("Digite a função que deseja 1 - Multiplicação, 2- Soma, 3-Subtração,4-Divisão"))
+  funcao = int(input("Digite a função que deseja | 1 - Multiplicação, 2- Soma, 3-Subtração,4-Divisão"))
 
   if(funcao == 1):
     a = int(input("Digite o valor do primeiro número"))

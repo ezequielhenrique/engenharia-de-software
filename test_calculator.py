@@ -15,6 +15,21 @@ class DivisaoTest(TestCase):
     def test_divisao_por_zero(self):
         self.assertRaises(ZeroDivisionError, divisao, 20, 0)
 
+class SomaTest(TestCase):
+    def test_soma_dois_numeros_positivos(self):
+        self.assertEqual(Soma(3, 7), 10)
+    def test_soma_numeros_positivos_negativos(self):
+        self.assertEqual(Soma(6,-1) , 5 )
+    def test_soma_numeros_negativos(self):
+        self.assertEqual(Soma(-6,-3),-9)
+
+class  SubtracaoTest(TestCase):
+    def test_sub_dois_numeros_positivos(self):
+        self.assertEqual(Subtracao(10, 7), 3)
+    def test_sub_numeros_positivos_negativos(self):
+        self.assertEqual(Subtracao(10,-1) , 11 )
+    def test_sub_numeros_negativos(self):
+        self.assertEqual(Subtracao(-6,-3),-3)
 
 if __name__ == '__main__':
     main()
